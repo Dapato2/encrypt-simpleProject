@@ -33,6 +33,8 @@ document.getElementById("parrafo").setAttribute('style','display: none')
 }
 }
 
+
+
 function desencriptarTexto() {
 let textoIngresado = document.getElementById("textoIngresado").value;
 
