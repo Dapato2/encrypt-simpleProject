@@ -5,29 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-    <h1>Encriptador de Texto</h1>
     <div class="container">
             <div class="txtA">
-                <label for="textoIngresado">Ingrese el texto:</label>
-                <textarea id="textoIngresado" rows="4" cols="50"></textarea>
-                <div>
+                <textarea id="textoIngresado" rows="4" cols="50" placeholder="Ingrese el texto:"></textarea>
+                <div class="instrucDiv">
                     <p>Solo letras minúsculas y sin acentos.</p>
                 </div>
                 <div class="bttns">
-                    <button onclick="encriptarTexto()">Encriptar</button><br>
-                    <button onclick="desencriptarTexto()">Des-encriptar</button>
+                    <button id="bttnEncriptar" onclick="encriptarTexto()">Encriptar</button><br>
+                    <button id="bttnDesencriptar" onclick="desencriptarTexto()">Des-encriptar</button>
                 </div>
     
 
             </div>
             <div class="txtResultado">
-                <img src="/imgs/1.png" alt="noMesaje">
-                <label for="inputTextoEncriptado">Texto Encriptado:</label>
+                <img src="/imgs/Muñeco.png" alt="" id="muñeco" style="display: none;" >
                 <textarea id="inputTextoEncriptado" rows="4" cols="50" readonly></textarea>
+
+                <div class="divMsgError">
+                    <h2 id="msgError" style="display: none;">Ningun mensaje fue encontrado</h2>
+                    <p id="parrafo" style="display: none;">Ingresa el texto que deseas encriptar o desencriptar
+                    </p>
+
+                </div>
 
             </div>
 
