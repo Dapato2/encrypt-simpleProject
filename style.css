@@ -200,7 +200,7 @@
 }
 
 #parrafo {
-    font-size: x-small;
+    font-size: 14px;
     color: rgba(73, 80, 87, .7);
 
 }
@@ -213,6 +213,12 @@
 
     .txtA {
         width: 100%;
+    }
+
+    #parrafo {
+        font-size: 9px;
+        color: rgba(73, 80, 87, .7);
+    
     }
 
     #textoIngresado {
